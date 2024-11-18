@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const supabase = 
-    supabaseClient.createClient('https://paaidtgkzguwrhaajxcv.supabase.co', 
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBhYWlkdGdremd1d3JoYWFqeGN2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzEzNjA2MDUsImV4cCI6MjA0NjkzNjYwNX0.Fxeeo7NFBIHWyPy9MrYnVv8hvw688gTXiqgQ_eDbpCs')
+    supabaseClient.createClient('https://zzndqduviqkncxgbnnra.supabase.co', 
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6bmRxZHV2aXFrbmN4Z2JubnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE5NjM2ODksImV4cCI6MjA0NzUzOTY4OX0.P9QNBY4EpOfsd8UuOO-0aKBkl-Yb2qzNCBb_kXzVqqY')
 
 
 app.get('/products', async (req, res) => {
@@ -110,6 +110,6 @@ app.get('*', (req, res) => {
     res.send("Hello again I am working my friend to the moon and behind <3");
 });
 
-app.listen(3008, () => {
-    console.log(`> Ready on http://localhost:3008`);
+app.listen(5610, () => {
+    console.log(`> Ready on http://localhost:5610`);
 });
