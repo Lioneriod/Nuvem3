@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Product CRUD</title>
+    <title>Loja do Abacaxi</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+    
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Venda de abacaxi e produtos derivados como sucos, conservas e doces.">
+        <meta name="keywords" content="abacaxi, suco de abacaxi, doce de abacaxi, conservas, produtos de abacaxi">
+        
+        <link rel="stylesheet" href="styles.css"> <!-- Se você tiver um arquivo CSS -->
 </head>
 <body>
-  <h1>Product CRUD</h1>
-
-  <form id="add-product-form">
-    <h2>Add Product</h2>
-    <label for="name">Name:</label>
+  <form id="add-product-form"> <!--não mudar-->
+    <h2>Adicione um produto ao carrinho:</h2> <!--mudar texto dentro, não mexer em nada que tenha id-->
+    <label for="name">Nome:</label>
     <input type="text" id="name" name="name" required>
-    <label for="price">Price:</label>
+    <label for="price">Preço:</label>
     <input type="number" id="price" name="price" required step="0.01">
-    <button type="submit">Add</button>
+    <button type="submit">Colocar</button>
   </form>
 
   <ul id="products"></ul>
+  <!-- Cabeçalho do site -->
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Seção de Introdução -->
+<section id="home">
+    <div class="intro">
+        <h1>Bem-vindo à Loja do Abacaxi!</h1>
+        <p>Aqui você encontra os melhores abacaxis frescos e produtos derivados como sucos, doces e conservas.</p>
+    </div>
+</section>
+
+<!-- Seção Sobre Nós -->
+<section id="sobre">
+    <h2>Sobre a Loja do Abacaxi</h2>
+    <p>Somos uma empresa especializada na venda de abacaxis frescos e produtos derivados, com compromisso com qualidade e sabor. Trabalhamos com produtores locais para garantir o melhor produto para nossos clientes.</p>
+</section>
+
+<!-- Seção de Contato -->
+<section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Tem alguma dúvida? Entre em contato conosco pelo formulário abaixo:</p>
+    <form action="enviar-formulario.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Loja do Abacaxi - Todos os direitos reservados</p>
+    <p>Endereço: Rua do Abacaxi, 123 - Cidade do Sabor, Brasil</p>
+    <p><a href="mailto:contato@lojadoabacaxi.com">contato@lojadoabacaxi.com</a></p>
+</footer>
 
   <script src="app.js"></script>
   <script>
